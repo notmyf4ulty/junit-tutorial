@@ -12,7 +12,7 @@ public class TestJunit {
    }
 
    String testString = "What about NO?";
-   MessageUtil messageUtil = new MessageUtil("ss");
+   MessageUtil messageUtil = new MessageUtil("What about NO?");
 
    @Test
    public void testPrintMessage() {
