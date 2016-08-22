@@ -5,24 +5,16 @@ import junit.framework.TestSuite;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
+import com.catnbearsoftware.app.WritingATests.*;
 
 public class TestRunner {
    public static void main(String[] args) {
-//       Result result = JUnitCore.runClasses(TestJunit3.class);
+       Result result = JUnitCore.runClasses(TestEmployeeDetails.class);
 
-       TestSuite suite = new TestSuite(TestJunit.class, TestJunit1.class, TestJunit2.class, TestJunit3.class);
-       TestResult result = new TestResult();
+       for (Failure failure : result.getFailures()) {
+           System.out.println(failure.toString());
+       }
 
-       suite.run(result);
-
-       System.out.println("Number of test cases = " + result.runCount());
-       System.out.println("Number of errors = " + result.errorCount());
-       System.out.println("Number of failures = " + result.failureCount());
-
-//       for (Failure failure : result.getFailures()) {
-//           System.out.println(failure.toString());
-//       }
-//
-//       System.out.println(result.wasSuccessful());
+       System.out.println(result.wasSuccessful());
    }
 }  	
