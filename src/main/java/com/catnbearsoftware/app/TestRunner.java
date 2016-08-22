@@ -9,7 +9,7 @@ import com.catnbearsoftware.app.UsingAssertion.*;
 
 public class TestRunner {
    public static void main(String[] args) {
-       Result result = JUnitCore.runClasses(TestAssertions.class);
+       Result result = JUnitCore.runClasses(JunitAnnotation.class);
 
        for (Failure failure : result.getFailures()) {
            System.out.println(failure.toString());
