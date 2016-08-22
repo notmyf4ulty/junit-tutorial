@@ -1,13 +1,13 @@
 package com.catnbearsoftware.app;
 
-import com.catnbearsoftware.app.SuiteTest.TestSuite;
+import com.catnbearsoftware.app.IgnoreTest.TestJunitIgnore;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
 public class TestRunner {
    public static void main(String[] args) {
-       Result result = JUnitCore.runClasses(TestSuite.class);
+       Result result = JUnitCore.runClasses(TestJunitIgnore.class);
 
        for (Failure failure : result.getFailures()) {
            System.out.println(failure.toString());

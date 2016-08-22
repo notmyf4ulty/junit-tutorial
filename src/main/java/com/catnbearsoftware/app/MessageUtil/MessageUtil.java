@@ -1,4 +1,4 @@
-package com.catnbearsoftware.app;
+package com.catnbearsoftware.app.MessageUtil;
 
 /**
  * Created by Przemek on 19.08.2016.

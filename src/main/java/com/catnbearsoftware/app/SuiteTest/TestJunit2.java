@@ -1,6 +1,6 @@
 package com.catnbearsoftware.app.SuiteTest;
 
-import com.catnbearsoftware.app.MessageUtil;
+import com.catnbearsoftware.app.MessageUtil.MessageUtil;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
