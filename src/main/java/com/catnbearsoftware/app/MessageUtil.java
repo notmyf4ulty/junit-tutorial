@@ -1,3 +1,5 @@
+package com.catnbearsoftware.app;
+
 /**
  * Created by Przemek on 19.08.2016.
  */
