@@ -1,13 +1,13 @@
 package com.catnbearsoftware.app;
 
-import com.catnbearsoftware.app.ExceptionTest.TestJunitException;
+import com.catnbearsoftware.app.ParametrizedTest.*;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
 public class TestRunner {
    public static void main(String[] args) {
-       Result result = JUnitCore.runClasses(TestJunitException.class);
+       Result result = JUnitCore.runClasses(PrimeNumberCheckerTest.class);
 
        for (Failure failure : result.getFailures()) {
            System.out.println(failure.toString());
