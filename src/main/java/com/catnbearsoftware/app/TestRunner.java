@@ -1,13 +1,13 @@
 package com.catnbearsoftware.app;
 
-import com.catnbearsoftware.app.TimeTest.TestJunitTime;
+import com.catnbearsoftware.app.ExceptionTest.TestJunitException;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
 public class TestRunner {
    public static void main(String[] args) {
-       Result result = JUnitCore.runClasses(TestJunitTime.class);
+       Result result = JUnitCore.runClasses(TestJunitException.class);
 
        for (Failure failure : result.getFailures()) {
            System.out.println(failure.toString());
