@@ -1,4 +1,4 @@
-package com.catnbearsoftware.app;
+package com.catnbearsoftware.app.UsingAssertion;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 /**
  * Created by Przemek on 19.08.2016.
  */
-public class TestJunit1 {
+public class AssertionSuperBasic {
     @Test
     public void testAdd() {
         String str = "hello";
