@@ -5,7 +5,7 @@ package com.catnbearsoftware.app.SuiteTest;
         import static org.junit.Assert.*;
 
 /**
- * Created by Przemek on 22.08.2016.
+ * Test class 1
  */
 public class TestJunit1 {
 

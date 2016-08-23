@@ -1,6 +1,6 @@
 package com.catnbearsoftware.app.WritingATests;
 
-public class EmployeeDetails {
+class EmployeeDetails {
 
     private String name;
     private double monthlySalary;
@@ -18,7 +18,7 @@ public class EmployeeDetails {
      * @param name the name to set
      */
 
-    public void setName(String name) {
+    void setName(String name) {
         this.name = name;
     }
 
@@ -26,7 +26,7 @@ public class EmployeeDetails {
      * @return the monthlySalary
      */
 
-    public double getMonthlySalary() {
+    double getMonthlySalary() {
         return monthlySalary;
     }
 
@@ -34,7 +34,7 @@ public class EmployeeDetails {
      * @param monthlySalary the monthlySalary to set
      */
 
-    public void setMonthlySalary(double monthlySalary) {
+    void setMonthlySalary(double monthlySalary) {
         this.monthlySalary = monthlySalary;
     }
 
@@ -48,7 +48,7 @@ public class EmployeeDetails {
     /**
      * @param age the age to set
      */
-    public void setAge(int age) {
+    void setAge(int age) {
         this.age = age;
     }
 }

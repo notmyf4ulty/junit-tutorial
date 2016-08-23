@@ -1,1 +1,0 @@
-This part of the course shows order of respective annotated methods' execution. I've already checked this in the UsingAssertion part's of the course.

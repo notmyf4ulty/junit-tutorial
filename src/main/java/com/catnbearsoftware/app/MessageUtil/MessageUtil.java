@@ -1,24 +1,32 @@
 package com.catnbearsoftware.app.MessageUtil;
 
 /**
- * Created by Przemek on 19.08.2016.
+ * Example class to be tested. It prints and returns simple messages.
  */
 public class MessageUtil {
     private String message;
 
-    //Constructor
-    //@param message to be printed
+    /**
+     * Constructor.
+     * @param message message to be printed
+     */
     public MessageUtil(String message) {
         this.message = message;
     }
 
-    // prints the message
+    /**
+     * Prints the message.
+     * @return Message.
+     */
     public String printMessage() {
         System.out.println(message);
         return message;
     }
 
-    // add "Hi!" to the message
+    /**
+     * Adds "Hi!" to the message
+     * @return message with "Hi" before
+     */
     public String salutationMessage(){
         message = "Hi!" + message;
         System.out.println(message);

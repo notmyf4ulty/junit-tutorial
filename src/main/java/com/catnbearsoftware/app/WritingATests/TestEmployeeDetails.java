@@ -4,13 +4,15 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Created by Przemek on 22.08.2016.
+ * Test class.
  */
 public class TestEmployeeDetails {
     EmpBusinessLogic empBusinessLogic = new EmpBusinessLogic();
     EmployeeDetails employee = new EmployeeDetails();
 
-    //test to check appraisal
+    /**
+     * Test to check appraisal
+     */
     @Test
     public void testCalculateAppraisal() {
         employee.setName("Rajeev");
@@ -21,7 +23,9 @@ public class TestEmployeeDetails {
         assertEquals(500, appraisal, 0.0);
     }
 
-    // test to check yearly salary
+    /**
+     * Test to check yearly salary
+     */
     @Test
     public void testCalculateYearlySalary() {
         employee.setName("Rajeev");

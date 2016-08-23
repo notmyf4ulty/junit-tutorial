@@ -4,6 +4,9 @@ import com.catnbearsoftware.app.MessageUtil.MessageUtil;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
+/**
+ * Test class 2
+ */
 public class TestJunit2 {
 
     String message = "Robert";

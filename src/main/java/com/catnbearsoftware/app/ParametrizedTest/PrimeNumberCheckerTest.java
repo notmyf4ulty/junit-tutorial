@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.Collection;
 
 /**
- * Created by Przemek on 22.08.2016.
+ * Example class to be tested.
  */
 @RunWith(Parameterized.class)
 public class PrimeNumberCheckerTest {
@@ -23,10 +23,13 @@ public class PrimeNumberCheckerTest {
         primeNumberChecker = new PrimeNumberChecker();
     }
 
-    // Each parameter should be placed as an argument here
-    // Every time runner triggers, it will pass the arguments
-    // from parameters we defined in primeNumbers() method
-
+    /**
+     * Each parameter should be placed as an argument here
+     * Every time runner triggers, it will pass the arguments
+     * from parameters we defined in primeNumbers() method
+     * @param inputNumber Numer to be checked if it's prime.
+     * @param expectedResult Result.
+     */
     public PrimeNumberCheckerTest(Integer inputNumber, Boolean expectedResult) {
         this.inputNumber = inputNumber;
         this.expectedResult = expectedResult;
@@ -43,7 +46,10 @@ public class PrimeNumberCheckerTest {
         });
     }
 
-    // This test will run 4 times since we have 5 parameters defined
+    /**
+     * This test will run 4 times since we have 5 parameters defined
+     */
+
     @Test
     public void testPrimeNumberChecker() {
         System.out.println("Parameterized Number is : " + inputNumber);

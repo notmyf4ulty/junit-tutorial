@@ -7,20 +7,17 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Created by Przemek on 22.08.2016.
+ * Class to test @Test's "timeout" parameter
  */
 public class TestJunitTime {
     String message = "Robert";
     MessageUtil messageUtil = new MessageUtil(message);
 
-    @Test(timeout = 5000) //IT WORKS! :D
+    @Test(timeout = 5000)
     public void testPrintMessage() {
         while(true) {
             System.out.print(".");
         }
-//        System.out.println("Inside testPrintMessage()");
-//        message = "Robert";
-//        assertEquals(message,messageUtil.printMessage());
     }
 
     @Test

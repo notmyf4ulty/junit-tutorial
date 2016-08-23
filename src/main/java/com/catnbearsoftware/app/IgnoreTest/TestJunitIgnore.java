@@ -5,9 +5,6 @@ import org.junit.Ignore;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- * Created by Przemek on 22.08.2016.
- */
 public class TestJunitIgnore {
     String message = "Robert";
     MessageUtil messageUtil = new MessageUtil(message);

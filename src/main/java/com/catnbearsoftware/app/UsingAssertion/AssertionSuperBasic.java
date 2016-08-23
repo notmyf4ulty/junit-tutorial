@@ -4,7 +4,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Created by Przemek on 19.08.2016.
+ * Class to test super basics of the assertions.
  */
 public class AssertionSuperBasic {
     @Test
